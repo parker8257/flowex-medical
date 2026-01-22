@@ -38,23 +38,23 @@ export default function Navbar() {
           : "bg-transparent"
       } rounded-2xl`}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-4">
+      <nav className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-white">
+            <span className="text-3xl font-extrabold text-white tracking-tight">
               {siteConfig.name}
               <span className="text-[#ff214f]">.</span>
             </span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#a1a1a1] hover:text-white transition-colors duration-200 text-sm font-medium"
+                className="text-[#a1a1a1] hover:text-white transition-colors duration-200 text-base font-semibold"
               >
                 {link.label}
               </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
             <LanguageSwitch />
             <a
               href="#contact"
-              className="bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors duration-200 cursor-pointer"
+              className="bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-200 cursor-pointer"
             >
               {t.nav.contact}
             </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
             className="md:hidden text-white p-2 cursor-pointer"
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-[#a1a1a1] hover:text-white transition-colors duration-200 text-sm font-medium py-2"
+                    className="text-[#a1a1a1] hover:text-white transition-colors duration-200 text-base font-semibold py-2"
                   >
                     {link.label}
                   </a>
@@ -108,7 +108,7 @@ export default function Navbar() {
                   <a
                     href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors duration-200 flex-1 text-center cursor-pointer"
+                    className="bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-200 flex-1 text-center cursor-pointer"
                   >
                     {t.nav.contact}
                   </a>
