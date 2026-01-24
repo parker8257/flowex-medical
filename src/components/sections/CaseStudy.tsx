@@ -10,7 +10,7 @@ export default function CaseStudy() {
   return (
     <section id="case-study" className="py-24 px-4 relative">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#ff214f]/5 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#2563EB]/5 via-transparent to-transparent" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section header */}
@@ -21,14 +21,14 @@ export default function CaseStudy() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <span className="inline-block bg-[#ff214f]/10 text-[#ff214f] text-sm font-medium px-4 py-1 rounded-full mb-4">
+          <span className="inline-block bg-[#2563EB]/10 text-[#2563EB] text-sm font-medium px-4 py-1 rounded-full mb-4">
             Case Study
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t.caseStudy.title}
-            <span className="text-[#ff214f]">.</span>
+            <span className="text-[#2563EB]">.</span>
           </h2>
-          <p className="text-[#ff214f] text-xl font-semibold">
+          <p className="text-[#2563EB] text-xl font-semibold">
             {t.caseStudy.subtitle}
           </p>
         </motion.div>
@@ -47,13 +47,13 @@ export default function CaseStudy() {
 
             {/* Quote */}
             <div className="bg-[#121212] border border-[#2a2a2a] rounded-2xl p-6 relative">
-              <Quote className="absolute top-4 left-4 w-8 h-8 text-[#ff214f]/20" />
+              <Quote className="absolute top-4 left-4 w-8 h-8 text-[#2563EB]/20" />
               <blockquote className="text-white text-lg italic leading-relaxed pl-8 mb-4">
                 &ldquo;{t.caseStudy.quote}&rdquo;
               </blockquote>
               <div className="flex items-center gap-3 pl-8">
-                <div className="w-10 h-10 bg-[#ff214f]/20 rounded-full flex items-center justify-center">
-                  <span className="text-[#ff214f] font-semibold">FO</span>
+                <div className="w-10 h-10 bg-[#2563EB]/20 rounded-full flex items-center justify-center">
+                  <span className="text-[#2563EB] font-semibold">FO</span>
                 </div>
                 <span className="text-[#a1a1a1] text-sm">
                   {t.caseStudy.author}
@@ -66,7 +66,7 @@ export default function CaseStudy() {
               href="#contact"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-2 bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-6 py-3 rounded-xl font-semibold mt-8 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#3b82f6] text-white px-6 py-3 rounded-xl font-semibold mt-8 transition-colors cursor-pointer"
             >
               {t.caseStudy.cta}
               <ArrowRight size={18} />
@@ -128,12 +128,12 @@ export default function CaseStudy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-6 bg-gradient-to-r from-[#ff214f]/10 to-transparent border border-[#ff214f]/20 rounded-xl p-6"
+              className="mt-6 bg-gradient-to-r from-[#2563EB]/10 to-transparent border border-[#2563EB]/20 rounded-xl p-6"
             >
               <div className="flex items-center justify-between">
                 <div>
                   <div className="text-[#a1a1a1] text-sm mb-1">ROI</div>
-                  <div className="text-3xl font-bold text-[#ff214f]">
+                  <div className="text-3xl font-bold text-[#2563EB]">
                     1,861%
                   </div>
                 </div>

@@ -10,9 +10,9 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-16 px-4">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#ff214f]/10 via-transparent to-transparent" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#ff214f]/20 rounded-full blur-[128px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#ff214f]/10 rounded-full blur-[96px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#2563EB]/10 via-transparent to-transparent" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#2563EB]/20 rounded-full blur-[128px]" />
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#2563EB]/10 rounded-full blur-[96px]" />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -23,8 +23,8 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#2a2a2a] rounded-full px-4 py-2 mb-8"
           >
-            <span className="w-2 h-2 bg-[#ff214f] rounded-full animate-pulse" />
-            <span className="text-[#a1a1a1] text-sm">n8n / Make / Zapier / AI</span>
+            <span className="w-2 h-2 bg-[#2563EB] rounded-full animate-pulse" />
+            <span className="text-[#a1a1a1] text-sm">{t.hero.badge}</span>
           </motion.div>
 
           {/* Heading */}
@@ -35,7 +35,7 @@ export default function Hero() {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             {t.hero.title}
-            <span className="text-[#ff214f]">.</span>
+            <span className="text-[#2563EB]">.</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -57,7 +57,7 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="group bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 cursor-pointer"
+              className="group bg-[#2563EB] hover:bg-[#3b82f6] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 cursor-pointer"
             >
               {t.hero.cta}
               <ArrowRight
@@ -69,7 +69,7 @@ export default function Hero() {
               href="#how-we-work"
               className="group bg-[#1a1a1a] hover:bg-[#222] border border-[#2a2a2a] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 cursor-pointer"
             >
-              <Play size={20} className="text-[#ff214f]" />
+              <Play size={20} className="text-[#2563EB]" />
               {t.hero.ctaSecondary}
             </a>
           </motion.div>
@@ -82,8 +82,8 @@ export default function Hero() {
             className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
           >
             {[
-              { value: "50+", label: t.hero.stats.clients },
-              { value: "10k+", label: t.hero.stats.hours },
+              { value: "15+", label: t.hero.stats.clients },
+              { value: "2,500+", label: t.hero.stats.visits },
               { value: "98%", label: t.hero.stats.satisfaction },
             ].map((stat, index) => (
               <div key={index} className="text-center">
@@ -108,7 +108,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-[#ff214f] rounded-full mt-2"
+            className="w-1.5 h-1.5 bg-[#2563EB] rounded-full mt-2"
           />
         </div>
       </motion.div>

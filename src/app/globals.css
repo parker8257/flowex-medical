@@ -3,8 +3,10 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
-  --accent: #ff214f;
-  --accent-hover: #ff4d6d;
+  --accent: #2563EB;
+  --accent-hover: #3b82f6;
+  --accent-success: #10B981;
+  --accent-success-hover: #059669;
   --card-bg: #121212;
   --card-border: #2a2a2a;
   --text-muted: #a1a1a1;
@@ -16,6 +18,8 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
+  --color-accent-success: var(--accent-success);
+  --color-accent-success-hover: var(--accent-success-hover);
   --color-card-bg: var(--card-bg);
   --color-card-border: var(--card-border);
   --color-text-muted: var(--text-muted);

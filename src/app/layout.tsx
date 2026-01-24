@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { siteConfig } from "@/config/site";
+import CookieConsent from "@/components/CookieConsent";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -11,21 +12,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} - Automatyzacja procesów biznesowych`,
+  title: `${siteConfig.name} - Automatyzacja dla Gabinetów Medycznych i Beauty`,
   description: siteConfig.description.pl,
   keywords: [
     "automatyzacja",
+    "gabinet medyczny",
+    "salon beauty",
+    "fizjoterapia",
+    "dentysta",
+    "rezerwacje online",
+    "chatbot",
+    "WhatsApp",
     "n8n",
-    "make",
-    "zapier",
     "AI",
-    "workflow",
-    "biznes",
-    "procesy",
+    "RODO",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
-    title: `${siteConfig.name} - Automatyzacja procesów biznesowych`,
+    title: `${siteConfig.name} - Automatyzacja dla Gabinetów Medycznych i Beauty`,
     description: siteConfig.description.pl,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} - Automatyzacja procesów biznesowych`,
+    title: `${siteConfig.name} - Automatyzacja dla Gabinetów Medycznych i Beauty`,
     description: siteConfig.description.pl,
   },
   robots: {
@@ -53,7 +57,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased bg-[#0a0a0a] text-white`}
       >
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          {children}
+          <CookieConsent />
+        </LanguageProvider>
       </body>
     </html>
   );

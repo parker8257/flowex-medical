@@ -14,7 +14,7 @@ export default function LanguageSwitch() {
           onClick={() => setLanguage(lang)}
           className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all duration-200 cursor-pointer ${
             language === lang
-              ? "bg-[#ff214f] text-white"
+              ? "bg-[#2563EB] text-white"
               : "text-[#a1a1a1] hover:text-white"
           }`}
         >

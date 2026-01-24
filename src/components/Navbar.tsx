@@ -21,10 +21,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "#services", label: t.nav.services },
+    { href: "#solution", label: t.nav.services },
     { href: "#how-we-work", label: t.nav.howWeWork },
-    { href: "#benefits", label: t.nav.benefits },
     { href: "#case-study", label: t.nav.caseStudy },
+    { href: "#pricing", label: t.nav.pricing },
     { href: "#faq", label: t.nav.faq },
   ];
 
@@ -44,7 +44,7 @@ export default function Navbar() {
           <a href="#" className="flex items-center gap-2">
             <span className="text-3xl font-extrabold text-white tracking-tight">
               {siteConfig.name}
-              <span className="text-[#ff214f]">.</span>
+              <span className="text-[#2563EB]">.</span>
             </span>
           </a>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
             <LanguageSwitch />
             <a
               href="#contact"
-              className="bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-200 cursor-pointer"
+              className="bg-[#2563EB] hover:bg-[#3b82f6] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-200 cursor-pointer"
             >
               {t.nav.contact}
             </a>
@@ -108,7 +108,7 @@ export default function Navbar() {
                   <a
                     href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="bg-[#ff214f] hover:bg-[#ff4d6d] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-200 flex-1 text-center cursor-pointer"
+                    className="bg-[#2563EB] hover:bg-[#3b82f6] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-200 flex-1 text-center cursor-pointer"
                   >
                     {t.nav.contact}
                   </a>

@@ -19,7 +19,7 @@ export default function Benefits() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t.benefits.title}
-            <span className="text-[#ff214f]">.</span>
+            <span className="text-[#2563EB]">.</span>
           </h2>
           <p className="text-[#a1a1a1] text-lg max-w-2xl mx-auto">
             {t.benefits.subtitle}
@@ -35,12 +35,12 @@ export default function Benefits() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gradient-to-b from-[#1a1a1a] to-[#121212] border border-[#2a2a2a] rounded-2xl p-8 text-center hover:border-[#ff214f]/30 transition-colors group"
+              className="bg-gradient-to-b from-[#1a1a1a] to-[#121212] border border-[#2a2a2a] rounded-2xl p-8 text-center hover:border-[#2563EB]/30 transition-colors group"
             >
               <motion.div
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.05 }}
-                className="text-4xl md:text-5xl font-bold text-[#ff214f] mb-2"
+                className="text-4xl md:text-5xl font-bold text-[#2563EB] mb-2"
               >
                 {item.value}
               </motion.div>

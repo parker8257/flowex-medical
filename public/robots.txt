@@ -1,0 +1,12 @@
+# Robots.txt for FlowEx
+# https://flowex.pl
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://flowex.pl/sitemap.xml
+
+# Disallow admin or private paths (if any)
+# Disallow: /admin/
+# Disallow: /api/

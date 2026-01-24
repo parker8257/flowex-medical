@@ -22,7 +22,7 @@ export default function FAQ() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t.faq.title}
-            <span className="text-[#ff214f]">.</span>
+            <span className="text-[#2563EB]">.</span>
           </h2>
         </motion.div>
 
@@ -49,7 +49,7 @@ export default function FAQ() {
                   transition={{ duration: 0.2 }}
                   className="flex-shrink-0"
                 >
-                  <ChevronDown className="w-5 h-5 text-[#ff214f]" />
+                  <ChevronDown className="w-5 h-5 text-[#2563EB]" />
                 </motion.div>
               </button>
 

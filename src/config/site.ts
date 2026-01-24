@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "FlowEx",
   description: {
-    pl: "Automatyzacja procesów biznesowych dla firm",
-    en: "Business Process Automation for Companies",
+    pl: "Automatyzacja procesów dla gabinetów medycznych i salonów beauty",
+    en: "Process Automation for Medical Practices and Beauty Salons",
   },
   url: "https://flowex.pl",
   email: "kontakt@flowex.pl",
@@ -21,98 +21,133 @@ export const translations = {
       howWeWork: "Jak działamy",
       benefits: "Korzyści",
       caseStudy: "Case Study",
+      pricing: "Cennik",
       faq: "FAQ",
       contact: "Kontakt",
     },
     hero: {
-      title: "Automatyzacja procesów biznesowych",
+      badge: "Specjalizacja: Medical & Beauty",
+      title: "Automatyzacja Rezerwacji i Administracji dla Gabinetów Medycznych",
       subtitle:
-        "Więcej czasu na rozwój firmy. Mniej czasu na powtarzalne zadania. Wdrażamy inteligentne rozwiązania, które pracują 24/7.",
-      cta: "Umów konsultację",
-      ctaSecondary: "Zobacz jak działamy",
+        "Więcej czasu na pacjentów. Mniej czasu na telefony. 24/7 dostępność. 0% no-show.",
+      cta: "Umów prezentację",
+      ctaSecondary: "Zobacz demo",
       stats: {
-        clients: "Zadowolonych klientów",
-        hours: "Zaoszczędzonych godzin",
+        clients: "Gabinetów",
+        visits: "Wizyt/miesiąc",
         satisfaction: "Satysfakcji",
       },
     },
-    services: {
-      title: "Co automatyzujemy?",
-      subtitle:
-        "Kompleksowe rozwiązania dla każdego obszaru Twojej firmy",
-      categories: {
-        title: "Obszary automatyzacji",
-        items: [
-          {
-            title: "Marketing",
-            description:
-              "Automatyczne kampanie, lead nurturing, social media posting",
-            icon: "megaphone",
-          },
-          {
-            title: "Sprzedaż",
-            description:
-              "CRM automation, follow-upy, pipeline management",
-            icon: "trendingUp",
-          },
-          {
-            title: "Obsługa klienta",
-            description:
-              "Chatboty AI, ticketing, automatyczne odpowiedzi",
-            icon: "headphones",
-          },
-          {
-            title: "HR i rekrutacja",
-            description:
-              "Onboarding, screening CV, zarządzanie urlopami",
-            icon: "users",
-          },
-          {
-            title: "Finanse",
-            description:
-              "Fakturowanie, księgowość, raportowanie finansowe",
-            icon: "calculator",
-          },
-          {
-            title: "Administracja",
-            description:
-              "Dokumenty, email management, workflow approval",
-            icon: "fileText",
-          },
-        ],
-      },
-      industries: {
-        title: "Branże, które wspieramy",
-        items: [
-          {
-            title: "Medical & Beauty",
-            description:
-              "Rezerwacje 24/7, przypomnienia, zbieranie opinii",
-            icon: "heart",
-          },
-          {
-            title: "E-commerce",
-            description:
-              "Zarządzanie zamówieniami, inventory, obsługa zwrotów",
-            icon: "shoppingCart",
-          },
-          {
-            title: "SaaS & Tech",
-            description:
-              "Onboarding użytkowników, billing, customer success",
-            icon: "code",
-          },
-          {
-            title: "Usługi profesjonalne",
-            description:
-              "Kancelarie, agencje, konsulting - workflow i dokumenty",
-            icon: "briefcase",
-          },
-        ],
-      },
+    problem: {
+      title: "Czy Twój Gabinet Ma Te Problemy",
+      subtitle: "Rozpoznajesz te wyzwania? Nie jesteś sam.",
+      items: [
+        {
+          title: "Telefony tylko w godzinach 9-17",
+          description:
+            "Pacjenci chcą rezerwować wizyty wieczorem i w weekendy. Bez recepcji tracisz potencjalne rezerwacje.",
+          stat: "60%",
+          statLabel: "utraconych rezerwacji",
+        },
+        {
+          title: "Wysoki wskaźnik no-show",
+          description:
+            "Pacjenci zapominają o wizytach. Każde puste miejsce to strata czasu i pieniędzy.",
+          stat: "15-25%",
+          statLabel: "wizyt bez potwierdzenia",
+        },
+        {
+          title: "Godziny na administrację",
+          description:
+            "Odbieranie telefonów, potwierdzanie wizyt, wysyłanie przypomnień. Czas, który mógłbyś spędzić z pacjentami.",
+          stat: "15h",
+          statLabel: "tygodniowo na administrację",
+        },
+        {
+          title: "Chaos w emailach i fakturach",
+          description:
+            "Niezorganizowany inbox, zagubione faktury, brak systemu. Stres i błędy na co dzień.",
+          stat: "100+",
+          statLabel: "emaili tygodniowo",
+        },
+      ],
+    },
+    solution: {
+      badge: "Rozwiązanie",
+      title: "Medical Practice Automation PRO",
+      subtitle: "Twoja cyfrowa recepcja, która pracuje 24/7",
+      modules: [
+        {
+          title: "Rezerwacje 24/7",
+          description:
+            "Pacjenci mogą rezerwować wizyty o każdej porze przez WhatsApp, Telegram lub Messenger. AI rozumie język naturalny.",
+          features: ["WhatsApp", "Telegram", "Messenger", "AI Chat"],
+        },
+        {
+          title: "Inteligentne Przypomnienia",
+          description:
+            "Automatyczne przypomnienia 24h przed wizytą. Drastyczna redukcja no-show z 20% do 0%.",
+          features: ["SMS", "WhatsApp", "Email", "Personalizacja"],
+        },
+        {
+          title: "Zbieranie Opinii",
+          description:
+            "Automatyczna prośba o opinię po wizycie. Link do Google Maps. Wzrost opinii o 300%.",
+          features: ["Google Reviews", "Automatyzacja", "Feedback"],
+        },
+        {
+          title: "Zarządzanie Fakturami",
+          description:
+            "AI ekstrakcja danych z faktur PDF. Automatyczna kategoryzacja i archiwizacja. Inbox zero.",
+          features: ["OCR", "Kategoryzacja", "Raportowanie"],
+        },
+      ],
+    },
+    features: {
+      title: "Co Dokładnie Dostajesz",
+      subtitle: "Kompletny pakiet automatyzacji dla Twojego gabinetu",
+      optional: "Opcjonalnie",
+      items: [
+        {
+          title: "Multi-Platform Booking",
+          description: "Rezerwacje przez WhatsApp, Telegram i Messenger z jednego miejsca.",
+        },
+        {
+          title: "AI Conversation",
+          description: "Inteligentny chatbot rozumiejący język naturalny i kontekst rozmowy.",
+        },
+        {
+          title: "Google Calendar Sync",
+          description: "Automatyczna synchronizacja z Twoim kalendarzem Google.",
+        },
+        {
+          title: "Automated Reminders",
+          description: "Przypomnienia o wizytach 24h wcześniej przez preferowany kanał.",
+        },
+        {
+          title: "Feedback Collection",
+          description: "Automatyczne zbieranie opinii i kierowanie do Google Maps.",
+        },
+        {
+          title: "Reactivation Campaigns",
+          description: "Automatyczne wiadomości do nieaktywnych pacjentów po 60 dniach.",
+        },
+        {
+          title: "Invoice Management",
+          description: "AI ekstrakcja i kategoryzacja faktur z emaili i dokumentów.",
+        },
+        {
+          title: "Email Classification",
+          description: "Automatyczne sortowanie emaili według priorytetu (Matryca Eisenhowera).",
+        },
+        {
+          title: "Instagram Content",
+          description: "AI generowanie postów edukacyjnych z branży medycznej.",
+        },
+      ],
     },
     howWeWork: {
-      title: "Jak działamy?",
+      title: "Jak Działamy",
       subtitle: "Prosty proces w 3 krokach",
       steps: [
         {
@@ -138,8 +173,31 @@ export const translations = {
         },
       ],
     },
+    technology: {
+      title: "Technologia Klasy Enterprise",
+      subtitle: "Najnowsze AI i sprawdzone rozwiązania automatyzacji",
+      partners: "Używamy narzędzi od",
+      pillars: [
+        {
+          title: "Najnowsze AI",
+          description: "GPT-4, Claude, Gemini - naturalna rozmowa, nie bot",
+        },
+        {
+          title: "RODO/GDPR Compliance",
+          description: "DPA, SCC, szyfrowanie TLS 1.3 i AES-256",
+        },
+        {
+          title: "Cloud Infrastructure",
+          description: "99.9% uptime, redundancy, automatyczne backupy",
+        },
+        {
+          title: "n8n Automation",
+          description: "Sprawdzona platforma, tysiące integracji",
+        },
+      ],
+    },
     benefits: {
-      title: "Korzyści z automatyzacji",
+      title: "Korzyści z Automatyzacji",
       subtitle: "Konkretne wyniki, które osiągają nasi klienci",
       items: [
         {
@@ -149,17 +207,17 @@ export const translations = {
         },
         {
           value: "+47%",
-          label: "Wzrost wydajności",
-          description: "Więcej zrealizowanych projektów",
+          label: "Wzrost wizyt",
+          description: "Dzięki dostępności 24/7",
         },
         {
           value: "24/7",
-          label: "Dostępność systemów",
-          description: "Automatyzacja nigdy nie śpi",
+          label: "Dostępność rezerwacji",
+          description: "Nawet o 23:00 w niedzielę",
         },
         {
           value: "0%",
-          label: "No-show po wdrożeniu",
+          label: "No-show",
           description: "Inteligentne przypomnienia",
         },
       ],
@@ -180,33 +238,150 @@ export const translations = {
       ],
       cta: "Chcę takie wyniki",
     },
+    pricing: {
+      title: "Przejrzyste Ceny",
+      subtitle: "Żadnych ukrytych kosztów. Wybierz plan dopasowany do Twojego gabinetu.",
+      setup: "Setup",
+      popular: "Najpopularniejszy",
+      plans: [
+        {
+          name: "Starter",
+          description: "Dla małych gabinetów",
+          setupPrice: "4,000 PLN",
+          price: "699 PLN",
+          period: "/msc",
+          features: [
+            "Rezerwacje 24/7 (1 platforma)",
+            "Inteligentne przypomnienia",
+            "System feedbacku",
+            "Google Calendar sync",
+            "Podstawowe wsparcie",
+          ],
+          cta: "Zacznij teraz",
+        },
+        {
+          name: "Professional",
+          description: "Dla rozwijających się klinik",
+          setupPrice: "5,000 PLN",
+          price: "1,299 PLN",
+          period: "/msc",
+          bonus: "Pierwszy miesiąc gratis!",
+          features: [
+            "Wszystko ze Starter",
+            "Multi-Platform (WhatsApp + Telegram + Messenger)",
+            "Reaktywacja nieaktywnych pacjentów",
+            "Zarządzanie fakturami",
+            "Klasyfikacja emaili",
+            "Priorytetowe wsparcie",
+          ],
+          cta: "Najlepszy wybór",
+        },
+        {
+          name: "Enterprise",
+          description: "Dla dużych klinik",
+          price: "Custom",
+          features: [
+            "Wszystko z Professional",
+            "Instagram Content Generator",
+            "Custom integracje",
+            "Dedykowany opiekun",
+            "SLA gwarancja",
+            "Szkolenia on-site",
+          ],
+          cta: "Umów konsultację",
+        },
+      ],
+    },
+    roiCalculator: {
+      badge: "Kalkulator ROI",
+      title: "Oblicz Swój ROI",
+      subtitle: "Sprawdź ile możesz zaoszczędzić z naszym systemem",
+      visits: "Wizyty miesięcznie",
+      noShow: "Aktualny % no-show",
+      avgPrice: "Średnia cena wizyty",
+      monthlyLoss: "Tracisz miesięcznie",
+      savings: "Zaoszczędzisz z nami",
+      payback: "Zwrot inwestycji",
+      months: "msc",
+      cta: "Zacznij oszczędzać",
+    },
+    testimonials: {
+      title: "Co Mówią Nasi Klienci",
+      subtitle: "Opinie właścicieli gabinetów, którzy nam zaufali",
+      items: [
+        {
+          quote:
+            "System działa jak szwajcarski zegarek. Pacjenci są zachwyceni możliwością rezerwacji przez WhatsApp o każdej porze.",
+          name: "Anna Kowalska",
+          role: "Właścicielka",
+          company: "Beauty Clinic",
+          initials: "AK",
+        },
+        {
+          quote:
+            "Zero no-show od 3 miesięcy! Przypomnienia automatyczne to game-changer. Polecam każdemu gabinetowi.",
+          name: "Marek Nowak",
+          role: "Kierownik",
+          company: "Dental Care",
+          initials: "MN",
+        },
+        {
+          quote:
+            "Wdrożenie trwało tydzień, a efekty widać od razu. Mój zespół może skupić się na pacjentach zamiast na telefonach.",
+          name: "Katarzyna Wiśniewska",
+          role: "Właścicielka",
+          company: "Fizjo Studio",
+          initials: "KW",
+        },
+      ],
+    },
     faq: {
-      title: "Często zadawane pytania",
+      title: "Często Zadawane Pytania",
       items: [
         {
           question: "Ile kosztuje wdrożenie automatyzacji?",
           answer:
-            "Koszty zależą od zakresu projektu. Podstawowe automatyzacje zaczynają się od 2000 PLN. Oferujemy darmową konsultację, podczas której wycenimy Twój projekt.",
+            "Setup zaczyna się od 4,000 PLN dla planu Starter. Miesięczny abonament od 699 PLN. Oferujemy darmową konsultację, podczas której wycenimy Twój projekt.",
         },
         {
           question: "Jak długo trwa wdrożenie?",
           answer:
-            "Typowe wdrożenie trwa 7-14 dni. Proste automatyzacje możemy uruchomić nawet w 48 godzin. Skomplikowane projekty enterprise mogą trwać 4-6 tygodni.",
+            "Typowe wdrożenie trwa 7-14 dni. Proste automatyzacje możemy uruchomić nawet w 48 godzin. Od kontaktu do działającego systemu: 2-3 tygodnie.",
         },
         {
-          question: "Czy dane są bezpieczne?",
+          question: "Czy dane pacjentów są bezpieczne?",
           answer:
-            "Tak. Stosujemy szyfrowanie TLS 1.3, AES-256. Jesteśmy w pełni zgodni z RODO/GDPR. Podpisujemy DPA z każdym klientem.",
+            "Tak. Stosujemy szyfrowanie TLS 1.3, AES-256. Jesteśmy w pełni zgodni z RODO/GDPR. Podpisujemy DPA z każdym klientem. Zero Data Retention opcja dostępna.",
         },
         {
-          question: "Z jakimi narzędziami się integrujecie?",
+          question: "Czy to działa z moim obecnym systemem?",
           answer:
-            "Integrujemy się z większością popularnych narzędzi: Google Workspace, Microsoft 365, Slack, CRM-y, systemy księgowe, e-commerce i wiele innych.",
+            "Integrujemy się z Google Workspace, Microsoft 365 i większością popularnych narzędzi. Nie musisz zmieniać swoich obecnych systemów.",
         },
         {
           question: "Czy muszę znać się na technice?",
           answer:
-            "Nie. Wszystko konfigurujemy za Ciebie. Po wdrożeniu otrzymujesz prosty interface i szkolenie. Nie musisz znać się na programowaniu.",
+            "Nie. Wszystko konfigurujemy za Ciebie. Po wdrożeniu otrzymujesz prosty interface (Google Sheets) i szkolenie w 1 godzinę.",
+        },
+        {
+          question: "Co jeśli pacjent woli telefonować?",
+          answer:
+            "Żaden problem! System automatyzacji działa równolegle z tradycyjnymi kanałami. Pacjenci mogą nadal dzwonić - po prostu masz też opcję 24/7.",
+        },
+        {
+          question: "Czy mogę anulować w każdej chwili?",
+          answer:
+            "Tak. Nie ma długoterminowych umów. Możesz zrezygnować z miesięcznym wypowiedzeniem. Dane eksportujemy na Twoje żądanie.",
+        },
+        {
+          question: "Czy system mówi po polsku?",
+          answer:
+            "Oczywiście! System jest w pełni spolonizowany. AI chatbot prowadzi naturalną rozmowę po polsku, rozumie potoczny język i kontekst.",
+        },
+        {
+          question: "Jakie są koszty API i SMS?",
+          answer:
+            "W planach maintenance wszystkie koszty API są włączone. Nie płacisz osobno za wiadomości WhatsApp, Telegram czy email.",
         },
         {
           question: "Co jeśli coś przestanie działać?",
@@ -215,15 +390,27 @@ export const translations = {
         },
       ],
     },
+    ctaFinal: {
+      title: "Gotowy na Więcej Czasu i Więcej Przychodów",
+      subtitle:
+        "Umów darmową konsultację. Pokażemy Ci jak to działa w 30 minut.",
+      primaryCta: "Umów prezentację",
+      secondaryCta: "Zobacz case study",
+      badges: {
+        free: "Darmowa konsultacja",
+        noObligation: "Bez zobowiązań",
+        rodo: "RODO-compliant",
+      },
+    },
     contact: {
-      title: "Porozmawiajmy o automatyzacji",
+      title: "Porozmawiajmy o Automatyzacji",
       subtitle:
         "Umów darmową konsultację. Pokażemy jak możesz zaoszczędzić czas i pieniądze.",
       form: {
         name: "Imię i nazwisko",
         email: "Email",
         phone: "Telefon",
-        company: "Nazwa firmy",
+        company: "Nazwa gabinetu",
         message: "Wiadomość",
         submit: "Wyślij wiadomość",
       },
@@ -235,7 +422,7 @@ export const translations = {
     },
     footer: {
       description:
-        "Automatyzujemy procesy biznesowe, żebyś mógł skupić się na tym, co naprawdę ważne.",
+        "Automatyzujemy procesy w gabinetach medycznych i salonach beauty, żebyś mógł skupić się na pacjentach.",
       links: {
         company: "Firma",
         services: "Usługi",
@@ -252,85 +439,130 @@ export const translations = {
       howWeWork: "How We Work",
       benefits: "Benefits",
       caseStudy: "Case Study",
+      pricing: "Pricing",
       faq: "FAQ",
       contact: "Contact",
     },
     hero: {
-      title: "Business Process Automation",
+      badge: "Specialization: Medical & Beauty",
+      title: "Booking & Admin Automation for Medical Practices",
       subtitle:
-        "More time for business growth. Less time on repetitive tasks. We implement intelligent solutions that work 24/7.",
-      cta: "Book a consultation",
-      ctaSecondary: "See how we work",
+        "More time for patients. Less time on phones. 24/7 availability. 0% no-show.",
+      cta: "Book a demo",
+      ctaSecondary: "Watch demo",
       stats: {
-        clients: "Happy clients",
-        hours: "Hours saved",
+        clients: "Clinics",
+        visits: "Visits/month",
         satisfaction: "Satisfaction",
       },
     },
-    services: {
-      title: "What do we automate?",
-      subtitle: "Comprehensive solutions for every area of your business",
-      categories: {
-        title: "Automation Areas",
-        items: [
-          {
-            title: "Marketing",
-            description:
-              "Automated campaigns, lead nurturing, social media posting",
-            icon: "megaphone",
-          },
-          {
-            title: "Sales",
-            description: "CRM automation, follow-ups, pipeline management",
-            icon: "trendingUp",
-          },
-          {
-            title: "Customer Service",
-            description: "AI chatbots, ticketing, automated responses",
-            icon: "headphones",
-          },
-          {
-            title: "HR & Recruitment",
-            description: "Onboarding, CV screening, leave management",
-            icon: "users",
-          },
-          {
-            title: "Finance",
-            description: "Invoicing, accounting, financial reporting",
-            icon: "calculator",
-          },
-          {
-            title: "Administration",
-            description: "Documents, email management, workflow approval",
-            icon: "fileText",
-          },
-        ],
-      },
-      industries: {
-        title: "Industries We Support",
-        items: [
-          {
-            title: "Medical & Beauty",
-            description: "24/7 bookings, reminders, review collection",
-            icon: "heart",
-          },
-          {
-            title: "E-commerce",
-            description: "Order management, inventory, returns handling",
-            icon: "shoppingCart",
-          },
-          {
-            title: "SaaS & Tech",
-            description: "User onboarding, billing, customer success",
-            icon: "code",
-          },
-          {
-            title: "Professional Services",
-            description: "Law firms, agencies, consulting - workflow & documents",
-            icon: "briefcase",
-          },
-        ],
-      },
+    problem: {
+      title: "Does Your Practice Have These Problems",
+      subtitle: "Recognize these challenges? You're not alone.",
+      items: [
+        {
+          title: "Phone calls only 9-17",
+          description:
+            "Patients want to book appointments evenings and weekends. Without a receptionist, you lose potential bookings.",
+          stat: "60%",
+          statLabel: "lost bookings",
+        },
+        {
+          title: "High no-show rate",
+          description:
+            "Patients forget about appointments. Every empty slot is lost time and money.",
+          stat: "15-25%",
+          statLabel: "unconfirmed visits",
+        },
+        {
+          title: "Hours on administration",
+          description:
+            "Answering phones, confirming appointments, sending reminders. Time you could spend with patients.",
+          stat: "15h",
+          statLabel: "weekly on admin",
+        },
+        {
+          title: "Email and invoice chaos",
+          description:
+            "Disorganized inbox, lost invoices, no system. Daily stress and errors.",
+          stat: "100+",
+          statLabel: "emails weekly",
+        },
+      ],
+    },
+    solution: {
+      badge: "Solution",
+      title: "Medical Practice Automation PRO",
+      subtitle: "Your digital receptionist that works 24/7",
+      modules: [
+        {
+          title: "24/7 Bookings",
+          description:
+            "Patients can book appointments anytime via WhatsApp, Telegram, or Messenger. AI understands natural language.",
+          features: ["WhatsApp", "Telegram", "Messenger", "AI Chat"],
+        },
+        {
+          title: "Smart Reminders",
+          description:
+            "Automatic reminders 24h before appointments. Dramatic no-show reduction from 20% to 0%.",
+          features: ["SMS", "WhatsApp", "Email", "Personalization"],
+        },
+        {
+          title: "Review Collection",
+          description:
+            "Automatic review request after visit. Link to Google Maps. 300% increase in reviews.",
+          features: ["Google Reviews", "Automation", "Feedback"],
+        },
+        {
+          title: "Invoice Management",
+          description:
+            "AI extraction of data from PDF invoices. Automatic categorization and archiving. Inbox zero.",
+          features: ["OCR", "Categorization", "Reporting"],
+        },
+      ],
+    },
+    features: {
+      title: "What You Get",
+      subtitle: "Complete automation package for your practice",
+      optional: "Optional",
+      items: [
+        {
+          title: "Multi-Platform Booking",
+          description: "Bookings via WhatsApp, Telegram, and Messenger from one place.",
+        },
+        {
+          title: "AI Conversation",
+          description: "Intelligent chatbot understanding natural language and conversation context.",
+        },
+        {
+          title: "Google Calendar Sync",
+          description: "Automatic synchronization with your Google Calendar.",
+        },
+        {
+          title: "Automated Reminders",
+          description: "Appointment reminders 24h in advance via preferred channel.",
+        },
+        {
+          title: "Feedback Collection",
+          description: "Automatic review collection and routing to Google Maps.",
+        },
+        {
+          title: "Reactivation Campaigns",
+          description: "Automatic messages to inactive patients after 60 days.",
+        },
+        {
+          title: "Invoice Management",
+          description: "AI extraction and categorization of invoices from emails and documents.",
+        },
+        {
+          title: "Email Classification",
+          description: "Automatic email sorting by priority (Eisenhower Matrix).",
+        },
+        {
+          title: "Instagram Content",
+          description: "AI-generated educational posts from the medical industry.",
+        },
+      ],
     },
     howWeWork: {
       title: "How We Work",
@@ -359,6 +591,29 @@ export const translations = {
         },
       ],
     },
+    technology: {
+      title: "Enterprise-Grade Technology",
+      subtitle: "Latest AI and proven automation solutions",
+      partners: "Powered by",
+      pillars: [
+        {
+          title: "Latest AI",
+          description: "GPT-4, Claude, Gemini - natural conversation, not a bot",
+        },
+        {
+          title: "GDPR Compliance",
+          description: "DPA, SCC, TLS 1.3 and AES-256 encryption",
+        },
+        {
+          title: "Cloud Infrastructure",
+          description: "99.9% uptime, redundancy, automatic backups",
+        },
+        {
+          title: "n8n Automation",
+          description: "Proven platform, thousands of integrations",
+        },
+      ],
+    },
     benefits: {
       title: "Benefits of Automation",
       subtitle: "Real results achieved by our clients",
@@ -370,17 +625,17 @@ export const translations = {
         },
         {
           value: "+47%",
-          label: "Productivity increase",
-          description: "More projects completed",
+          label: "Visit increase",
+          description: "Thanks to 24/7 availability",
         },
         {
           value: "24/7",
-          label: "System availability",
-          description: "Automation never sleeps",
+          label: "Booking availability",
+          description: "Even at 11 PM on Sunday",
         },
         {
           value: "0%",
-          label: "No-show after implementation",
+          label: "No-show",
           description: "Smart reminders",
         },
       ],
@@ -401,33 +656,150 @@ export const translations = {
       ],
       cta: "I want these results",
     },
+    pricing: {
+      title: "Transparent Pricing",
+      subtitle: "No hidden costs. Choose a plan that fits your practice.",
+      setup: "Setup",
+      popular: "Most Popular",
+      plans: [
+        {
+          name: "Starter",
+          description: "For small practices",
+          setupPrice: "4,000 PLN",
+          price: "699 PLN",
+          period: "/mo",
+          features: [
+            "24/7 Bookings (1 platform)",
+            "Smart reminders",
+            "Feedback system",
+            "Google Calendar sync",
+            "Basic support",
+          ],
+          cta: "Get started",
+        },
+        {
+          name: "Professional",
+          description: "For growing clinics",
+          setupPrice: "5,000 PLN",
+          price: "1,299 PLN",
+          period: "/mo",
+          bonus: "First month free!",
+          features: [
+            "Everything in Starter",
+            "Multi-Platform (WhatsApp + Telegram + Messenger)",
+            "Inactive patient reactivation",
+            "Invoice management",
+            "Email classification",
+            "Priority support",
+          ],
+          cta: "Best choice",
+        },
+        {
+          name: "Enterprise",
+          description: "For large clinics",
+          price: "Custom",
+          features: [
+            "Everything in Professional",
+            "Instagram Content Generator",
+            "Custom integrations",
+            "Dedicated manager",
+            "SLA guarantee",
+            "On-site training",
+          ],
+          cta: "Book consultation",
+        },
+      ],
+    },
+    roiCalculator: {
+      badge: "ROI Calculator",
+      title: "Calculate Your ROI",
+      subtitle: "See how much you can save with our system",
+      visits: "Monthly visits",
+      noShow: "Current no-show %",
+      avgPrice: "Average visit price",
+      monthlyLoss: "Monthly loss",
+      savings: "You'll save with us",
+      payback: "Payback period",
+      months: "mo",
+      cta: "Start saving",
+    },
+    testimonials: {
+      title: "What Our Clients Say",
+      subtitle: "Reviews from practice owners who trusted us",
+      items: [
+        {
+          quote:
+            "The system works like a Swiss watch. Patients love being able to book via WhatsApp anytime.",
+          name: "Anna Kowalska",
+          role: "Owner",
+          company: "Beauty Clinic",
+          initials: "AK",
+        },
+        {
+          quote:
+            "Zero no-shows for 3 months! Automatic reminders are a game-changer. I recommend it to every practice.",
+          name: "Marek Nowak",
+          role: "Manager",
+          company: "Dental Care",
+          initials: "MN",
+        },
+        {
+          quote:
+            "Implementation took a week, and results are immediate. My team can focus on patients instead of phones.",
+          name: "Katarzyna Wiśniewska",
+          role: "Owner",
+          company: "Physio Studio",
+          initials: "KW",
+        },
+      ],
+    },
     faq: {
       title: "Frequently Asked Questions",
       items: [
         {
           question: "How much does automation implementation cost?",
           answer:
-            "Costs depend on the project scope. Basic automations start from 500 EUR. We offer a free consultation to estimate your project.",
+            "Setup starts from 4,000 PLN for the Starter plan. Monthly subscription from 699 PLN. We offer a free consultation to estimate your project.",
         },
         {
           question: "How long does implementation take?",
           answer:
-            "Typical implementation takes 7-14 days. Simple automations can be launched in 48 hours. Complex enterprise projects may take 4-6 weeks.",
+            "Typical implementation takes 7-14 days. Simple automations can be launched in 48 hours. From contact to working system: 2-3 weeks.",
         },
         {
-          question: "Is my data secure?",
+          question: "Is patient data secure?",
           answer:
-            "Yes. We use TLS 1.3, AES-256 encryption. We are fully GDPR compliant. We sign a DPA with every client.",
+            "Yes. We use TLS 1.3, AES-256 encryption. We are fully GDPR compliant. We sign a DPA with every client. Zero Data Retention option available.",
         },
         {
-          question: "What tools do you integrate with?",
+          question: "Does it work with my current system?",
           answer:
-            "We integrate with most popular tools: Google Workspace, Microsoft 365, Slack, CRMs, accounting systems, e-commerce and many more.",
+            "We integrate with Google Workspace, Microsoft 365, and most popular tools. You don't need to change your current systems.",
         },
         {
           question: "Do I need technical knowledge?",
           answer:
-            "No. We configure everything for you. After implementation, you get a simple interface and training. No programming knowledge required.",
+            "No. We configure everything for you. After implementation, you get a simple interface (Google Sheets) and 1-hour training.",
+        },
+        {
+          question: "What if a patient prefers to call?",
+          answer:
+            "No problem! The automation system works alongside traditional channels. Patients can still call - you just also have a 24/7 option.",
+        },
+        {
+          question: "Can I cancel anytime?",
+          answer:
+            "Yes. No long-term contracts. You can cancel with one month's notice. We export your data upon request.",
+        },
+        {
+          question: "Does the system speak Polish?",
+          answer:
+            "Of course! The system is fully localized. The AI chatbot conducts natural conversations in Polish, understanding colloquial language and context.",
+        },
+        {
+          question: "What are the API and SMS costs?",
+          answer:
+            "In maintenance plans, all API costs are included. You don't pay separately for WhatsApp, Telegram, or email messages.",
         },
         {
           question: "What if something stops working?",
@@ -436,15 +808,27 @@ export const translations = {
         },
       ],
     },
+    ctaFinal: {
+      title: "Ready for More Time and More Revenue",
+      subtitle:
+        "Book a free consultation. We'll show you how it works in 30 minutes.",
+      primaryCta: "Book a demo",
+      secondaryCta: "See case study",
+      badges: {
+        free: "Free consultation",
+        noObligation: "No obligation",
+        rodo: "GDPR-compliant",
+      },
+    },
     contact: {
-      title: "Let's talk about automation",
+      title: "Let's Talk About Automation",
       subtitle:
         "Book a free consultation. We'll show you how to save time and money.",
       form: {
         name: "Full name",
         email: "Email",
         phone: "Phone",
-        company: "Company name",
+        company: "Practice name",
         message: "Message",
         submit: "Send message",
       },
@@ -456,7 +840,7 @@ export const translations = {
     },
     footer: {
       description:
-        "We automate business processes so you can focus on what really matters.",
+        "We automate processes in medical practices and beauty salons so you can focus on patients.",
       links: {
         company: "Company",
         services: "Services",

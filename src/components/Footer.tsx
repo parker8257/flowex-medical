@@ -42,7 +42,7 @@ export default function Footer() {
             <a href="#" className="inline-block mb-4">
               <span className="text-2xl font-bold text-white">
                 {siteConfig.name}
-                <span className="text-[#ff214f]">.</span>
+                <span className="text-[#2563EB]">.</span>
               </span>
             </a>
             <p className="text-[#a1a1a1] text-sm leading-relaxed mb-6">
@@ -59,7 +59,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#a1a1a1] hover:text-[#ff214f] hover:border-[#ff214f]/50 transition-colors cursor-pointer"
+                    className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#a1a1a1] hover:text-[#2563EB] hover:border-[#2563EB]/50 transition-colors cursor-pointer"
                   >
                     <IconComponent size={18} />
                   </a>
