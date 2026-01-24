@@ -259,14 +259,14 @@ export const translations = {
     },
     caseStudy: {
       title: "Case Study: FizjOdnova",
-      subtitle: "+47% wizyt w 2 miesiące",
+      subtitle: "+50% wizyt w 2 miesiące",
       description:
-        "Gabinet fizjoterapii w Warszawie borykał się z problemem no-show i brakiem czasu na administrację. Wdrożyliśmy kompleksowy system automatyzacji.",
+        "Gabinet fizjoterapii borykał się z problemem no-show i brakiem czasu na administrację. Wdrożyliśmy kompleksowy system automatyzacji.",
       quote:
         "Pierwsze 2 tygodnie byłam sceptyczna. Teraz nie wyobrażam sobie pracy bez tego systemu. Klienci piszą o 23:00 i dostają odpowiedź w 30 sekund. To game-changer.",
       author: "Właścicielka FizjOdnova",
       metrics: [
-        { label: "Rezerwacje/msc", before: "150", after: "220", change: "+47%" },
+        { label: "Rezerwacje/msc", before: "100", after: "150", change: "+50%" },
         { label: "No-show", before: "20%", after: "0%", change: "-100%" },
         { label: "Czas administracji", before: "15h/tyg", after: "2h/tyg", change: "-87%" },
         { label: "Opinie Google", before: "12", after: "48", change: "+300%" },
@@ -658,14 +658,14 @@ export const translations = {
     },
     caseStudy: {
       title: "Case Study: FizjOdnova",
-      subtitle: "+47% appointments in 2 months",
+      subtitle: "+50% appointments in 2 months",
       description:
-        "A physiotherapy clinic in Warsaw struggled with no-shows and lack of time for administration. We implemented a comprehensive automation system.",
+        "A physiotherapy clinic struggled with no-shows and lack of time for administration. We implemented a comprehensive automation system.",
       quote:
         "For the first 2 weeks I was skeptical. Now I can't imagine working without this system. Clients message at 11 PM and get a response in 30 seconds. It's a game-changer.",
       author: "Owner of FizjOdnova",
       metrics: [
-        { label: "Bookings/month", before: "150", after: "220", change: "+47%" },
+        { label: "Bookings/month", before: "100", after: "150", change: "+50%" },
         { label: "No-show", before: "20%", after: "0%", change: "-100%" },
         { label: "Admin time", before: "15h/week", after: "2h/week", change: "-87%" },
         { label: "Google reviews", before: "12", after: "48", change: "+300%" },
