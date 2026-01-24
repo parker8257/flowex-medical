@@ -24,7 +24,6 @@ export default function Navbar() {
     { href: "#solution", label: t.nav.services },
     { href: "#how-we-work", label: t.nav.howWeWork },
     { href: "#case-study", label: t.nav.caseStudy },
-    { href: "#pricing", label: t.nav.pricing },
     { href: "#faq", label: t.nav.faq },
   ];
 

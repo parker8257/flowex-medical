@@ -9,7 +9,6 @@ import HowWeWork from "@/components/sections/HowWeWork";
 import Technology from "@/components/sections/Technology";
 import Benefits from "@/components/sections/Benefits";
 import CaseStudy from "@/components/sections/CaseStudy";
-import Pricing from "@/components/sections/Pricing";
 import ROICalculator from "@/components/sections/ROICalculator";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
@@ -31,7 +30,6 @@ export default function Home() {
       <Technology />
       <Benefits />
       <CaseStudy />
-      <Pricing />
       <ROICalculator />
       <Testimonials />
       <FAQ />
