@@ -10,14 +10,34 @@ import CTAFinal from "@/components/sections/CTAFinal";
 import Contact from "@/components/sections/Contact";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { Stethoscope, Calendar, Bell, Star, FileText, ArrowRight } from "lucide-react";
+import { Stethoscope, Calendar, Bell, Star, FileText, Mail, ArrowRight } from "lucide-react";
 
 const medicalFeatures = [
   { icon: Calendar, title: "Rezerwacje 24/7", desc: "WhatsApp, Telegram, Messenger" },
   { icon: Bell, title: "Przypomnienia", desc: "SMS, Email, WhatsApp" },
   { icon: Star, title: "Zbieranie opinii", desc: "Google Reviews +300%" },
+  { icon: Mail, title: "Zarządzanie emailami", desc: "Sortowanie, priorytetyzacja" },
   { icon: FileText, title: "Faktury", desc: "OCR, kategoryzacja, archiwum" },
 ];
+
+const clinicTypes = {
+  pl: [
+    "Gabinety fizjoterapii",
+    "Salony fryzjerskie",
+    "Gabinety kosmetyczne",
+    "Kliniki stomatologiczne",
+    "Gabinety medycyny estetycznej",
+    "Salony SPA & Wellness",
+  ],
+  en: [
+    "Physiotherapy clinics",
+    "Hair salons",
+    "Beauty salons",
+    "Dental clinics",
+    "Aesthetic medicine",
+    "SPA & Wellness",
+  ],
+};
 
 export default function MedicalPage() {
   const { t, language } = useLanguage();
@@ -95,7 +115,7 @@ export default function MedicalPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4"
+              className="mt-16 grid grid-cols-2 md:grid-cols-5 gap-4"
             >
               {medicalFeatures.map((feature, index) => (
                 <div
@@ -103,10 +123,32 @@ export default function MedicalPage() {
                   className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl p-4 text-center"
                 >
                   <feature.icon className="w-8 h-8 text-[#10B981] mx-auto mb-2" />
-                  <div className="text-white font-medium">{feature.title}</div>
-                  <div className="text-[#a1a1a1] text-sm">{feature.desc}</div>
+                  <div className="text-white font-medium text-sm">{feature.title}</div>
+                  <div className="text-[#a1a1a1] text-xs">{feature.desc}</div>
                 </div>
               ))}
+            </motion.div>
+
+            {/* Clinic types */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="mt-12"
+            >
+              <p className="text-[#a1a1a1] text-sm mb-4">
+                {language === "pl" ? "Dla kogo?" : "Who is it for?"}
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                {clinicTypes[language].map((type, index) => (
+                  <span
+                    key={index}
+                    className="bg-[#10B981]/10 border border-[#10B981]/30 text-[#10B981] px-4 py-2 rounded-full text-sm font-medium"
+                  >
+                    {type}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>
