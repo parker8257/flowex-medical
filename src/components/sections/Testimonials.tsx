@@ -27,7 +27,7 @@ export default function Testimonials() {
   const { t } = useLanguage();
 
   return (
-    <section id="testimonials" className="py-24 px-4 relative">
+    <section id="testimonials" className="py-24 px-4 relative bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <motion.div

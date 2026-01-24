@@ -38,7 +38,7 @@ export default function Technology() {
   ];
 
   return (
-    <section id="technology" className="py-24 px-4 relative">
+    <section id="technology" className="py-24 px-4 relative bg-[#0f0f0f]">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#2563EB]/5 to-transparent" />
 

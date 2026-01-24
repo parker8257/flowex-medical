@@ -30,7 +30,7 @@ export default function Industries() {
   const { t } = useLanguage();
 
   return (
-    <section id="industries" className="py-24 px-4 relative">
+    <section id="industries" className="py-24 px-4 relative bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section header */}
         <motion.div

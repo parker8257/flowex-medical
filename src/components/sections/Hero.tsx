@@ -11,8 +11,10 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-16 px-4">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#2563EB]/10 via-transparent to-transparent" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#2563EB]/20 rounded-full blur-[128px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#2563EB]/10 rounded-full blur-[96px]" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#2563EB]/20 rounded-full blur-[128px] animate-pulse" />
+      <div className="absolute bottom-1/3 right-1/3 w-72 h-72 bg-[#10B981]/15 rounded-full blur-[100px]" />
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#8B5CF6]/10 rounded-full blur-[96px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-[#2563EB]/5 to-transparent rounded-full" />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="text-center max-w-4xl mx-auto">

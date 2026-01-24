@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
+import TechLogos from "@/components/sections/TechLogos";
 import Solution from "@/components/sections/Solution";
 import Industries from "@/components/sections/Industries";
 import HowWeWork from "@/components/sections/HowWeWork";
@@ -20,6 +21,7 @@ export default function Home() {
       <SchemaOrg />
       <Navbar />
       <Hero />
+      <TechLogos />
       <Solution />
       <Industries />
       <HowWeWork />
