@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "FlowEx",
   description: {
-    pl: "Automatyzacja procesów dla gabinetów medycznych i salonów beauty",
-    en: "Process Automation for Medical Practices and Beauty Salons",
+    pl: "Automatyzacja procesów biznesowych. Więcej czasu na rozwój firmy.",
+    en: "Business Process Automation. More time for growth.",
   },
   url: "https://flowex.pl",
   email: "kontakt@flowex.pl",
@@ -25,15 +25,15 @@ export const translations = {
       contact: "Kontakt",
     },
     hero: {
-      badge: "Specjalizacja: Medical & Beauty",
-      title: "Automatyzacja Rezerwacji i Administracji dla Gabinetów Medycznych",
+      badge: "",
+      title: "Automatyzacja procesów biznesowych",
       subtitle:
-        "Więcej czasu na pacjentów. Mniej czasu na telefony. 24/7 dostępność. 0% no-show.",
-      cta: "Umów prezentację",
-      ctaSecondary: "Zobacz demo",
+        "Więcej czasu na rozwój firmy. Mniej czasu na powtarzalne zadania. Wdrażamy inteligentne rozwiązania, które pracują 24/7.",
+      cta: "Umów konsultację",
+      ctaSecondary: "Zobacz jak działamy",
       stats: {
-        clients: "Gabinetów",
-        visits: "Wizyt/miesiąc",
+        clients: "Klientów",
+        visits: "Automatyzacji/msc",
         satisfaction: "Satysfakcji",
       },
     },
@@ -388,15 +388,15 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      badge: "Specialization: Medical & Beauty",
-      title: "Booking & Admin Automation for Medical Practices",
+      badge: "",
+      title: "Business Process Automation",
       subtitle:
-        "More time for patients. Less time on phones. 24/7 availability. 0% no-show.",
-      cta: "Book a demo",
-      ctaSecondary: "Watch demo",
+        "More time for growth. Less time on repetitive tasks. We implement intelligent solutions that work 24/7.",
+      cta: "Book a consultation",
+      ctaSecondary: "See how we work",
       stats: {
-        clients: "Clinics",
-        visits: "Visits/month",
+        clients: "Clients",
+        visits: "Automations/mo",
         satisfaction: "Satisfaction",
       },
     },

@@ -17,15 +17,17 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#2a2a2a] rounded-full px-4 py-2 mb-8"
-          >
-            <span className="w-2 h-2 bg-[#2563EB] rounded-full animate-pulse" />
-            <span className="text-[#a1a1a1] text-sm">{t.hero.badge}</span>
-          </motion.div>
+          {t.hero.badge && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#2a2a2a] rounded-full px-4 py-2 mb-8"
+            >
+              <span className="w-2 h-2 bg-[#2563EB] rounded-full animate-pulse" />
+              <span className="text-[#a1a1a1] text-sm">{t.hero.badge}</span>
+            </motion.div>
+          )}
 
           {/* Heading */}
           <motion.h1
