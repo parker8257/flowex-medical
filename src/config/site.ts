@@ -72,33 +72,69 @@ export const translations = {
       ],
     },
     solution: {
-      badge: "Rozwiązanie",
-      title: "Medical Practice Automation PRO",
-      subtitle: "Twoja cyfrowa recepcja, która pracuje 24/7",
+      badge: "Obszary automatyzacji",
+      title: "Kompleksowe rozwiązania dla każdego obszaru Twojej firmy",
+      subtitle: "Automatyzujemy procesy, które pochłaniają Twój czas",
       modules: [
         {
-          title: "Rezerwacje 24/7",
+          title: "Marketing",
           description:
-            "Pacjenci mogą rezerwować wizyty o każdej porze przez WhatsApp, Telegram lub Messenger. AI rozumie język naturalny.",
-          features: ["WhatsApp", "Telegram", "Messenger", "AI Chat"],
+            "Automatyczne kampanie email, lead nurturing, social media posting i analityka.",
+          features: ["Email campaigns", "Lead scoring", "Social media", "Analytics"],
         },
         {
-          title: "Inteligentne Przypomnienia",
+          title: "Sprzedaż",
           description:
-            "Automatyczne przypomnienia 24h przed wizytą. Drastyczna redukcja no-show z 20% do 0%.",
-          features: ["SMS", "WhatsApp", "Email", "Personalizacja"],
+            "CRM automation, automatyczne follow-upy, pipeline management i prognozowanie.",
+          features: ["CRM sync", "Follow-ups", "Pipeline", "Forecasting"],
         },
         {
-          title: "Zbieranie Opinii",
+          title: "Obsługa klienta",
           description:
-            "Automatyczna prośba o opinię po wizycie. Link do Google Maps. Wzrost opinii o 300%.",
-          features: ["Google Reviews", "Automatyzacja", "Feedback"],
+            "Chatboty AI, system ticketowy, automatyczne odpowiedzi i routing zgłoszeń.",
+          features: ["AI Chatbot", "Ticketing", "Auto-reply", "Routing"],
         },
         {
-          title: "Zarządzanie Fakturami",
+          title: "HR i rekrutacja",
           description:
-            "AI ekstrakcja danych z faktur PDF. Automatyczna kategoryzacja i archiwizacja. Inbox zero.",
-          features: ["OCR", "Kategoryzacja", "Raportowanie"],
+            "Automatyczny onboarding, screening CV, zarządzanie urlopami i dokumentacją.",
+          features: ["Onboarding", "CV screening", "Urlopy", "Dokumenty"],
+        },
+        {
+          title: "Finanse",
+          description:
+            "Automatyczne fakturowanie, księgowość, raportowanie finansowe i windykacja.",
+          features: ["Fakturowanie", "Księgowość", "Raporty", "Windykacja"],
+        },
+        {
+          title: "Administracja",
+          description:
+            "Zarządzanie dokumentami, email management, workflow approval i archiwizacja.",
+          features: ["Dokumenty", "Email", "Workflow", "Archiwum"],
+        },
+      ],
+    },
+    industries: {
+      title: "Branże, które wspieramy",
+      subtitle: "Specjalizujemy się w automatyzacji dla wybranych sektorów",
+      items: [
+        {
+          title: "Medical & Beauty",
+          description: "Rezerwacje 24/7, przypomnienia, zbieranie opinii",
+          link: "/medical",
+          cta: "Co automatyzujemy?",
+        },
+        {
+          title: "SaaS & Tech",
+          description: "Onboarding użytkowników, billing, customer success",
+          link: "/saas",
+          cta: "Dowiedz się więcej",
+        },
+        {
+          title: "Usługi profesjonalne",
+          description: "Kancelarie, agencje, konsulting - workflow i dokumenty",
+          link: "/services",
+          cta: "Dowiedz się więcej",
         },
       ],
     },
@@ -154,7 +190,7 @@ export const translations = {
           title: "Konsultacja",
           description:
             "Poznajemy Twoje procesy, identyfikujemy obszary do automatyzacji i proponujemy rozwiązania.",
-          duration: "30 min",
+          duration: "60 min",
         },
         {
           number: "02",
@@ -205,19 +241,19 @@ export const translations = {
           description: "Mniej powtarzalnych zadań",
         },
         {
-          value: "+47%",
-          label: "Wzrost wizyt",
-          description: "Dzięki dostępności 24/7",
+          value: "+40%",
+          label: "Wzrost produktywności",
+          description: "Więcej czasu na rozwój",
         },
         {
           value: "24/7",
-          label: "Dostępność rezerwacji",
-          description: "Nawet o 23:00 w niedzielę",
+          label: "Automatyzacja",
+          description: "Systemy pracują non-stop",
         },
         {
-          value: "0%",
-          label: "No-show",
-          description: "Inteligentne przypomnienia",
+          value: "2x",
+          label: "Szybszy onboarding",
+          description: "Klientów i pracowników",
         },
       ],
     },
@@ -338,7 +374,7 @@ export const translations = {
     ctaFinal: {
       title: "Gotowy na Więcej Czasu i Więcej Przychodów",
       subtitle:
-        "Umów darmową konsultację. Pokażemy Ci jak to działa w 30 minut.",
+        "Umów darmową konsultację. Pokażemy Ci jak to działa w 60 minut.",
       primaryCta: "Umów prezentację",
       secondaryCta: "Zobacz case study",
       badges: {
@@ -435,33 +471,69 @@ export const translations = {
       ],
     },
     solution: {
-      badge: "Solution",
-      title: "Medical Practice Automation PRO",
-      subtitle: "Your digital receptionist that works 24/7",
+      badge: "Automation Areas",
+      title: "Comprehensive solutions for every area of your business",
+      subtitle: "We automate processes that consume your time",
       modules: [
         {
-          title: "24/7 Bookings",
+          title: "Marketing",
           description:
-            "Patients can book appointments anytime via WhatsApp, Telegram, or Messenger. AI understands natural language.",
-          features: ["WhatsApp", "Telegram", "Messenger", "AI Chat"],
+            "Automated email campaigns, lead nurturing, social media posting and analytics.",
+          features: ["Email campaigns", "Lead scoring", "Social media", "Analytics"],
         },
         {
-          title: "Smart Reminders",
+          title: "Sales",
           description:
-            "Automatic reminders 24h before appointments. Dramatic no-show reduction from 20% to 0%.",
-          features: ["SMS", "WhatsApp", "Email", "Personalization"],
+            "CRM automation, automatic follow-ups, pipeline management and forecasting.",
+          features: ["CRM sync", "Follow-ups", "Pipeline", "Forecasting"],
         },
         {
-          title: "Review Collection",
+          title: "Customer Service",
           description:
-            "Automatic review request after visit. Link to Google Maps. 300% increase in reviews.",
-          features: ["Google Reviews", "Automation", "Feedback"],
+            "AI chatbots, ticketing system, automatic responses and request routing.",
+          features: ["AI Chatbot", "Ticketing", "Auto-reply", "Routing"],
         },
         {
-          title: "Invoice Management",
+          title: "HR & Recruitment",
           description:
-            "AI extraction of data from PDF invoices. Automatic categorization and archiving. Inbox zero.",
-          features: ["OCR", "Categorization", "Reporting"],
+            "Automatic onboarding, CV screening, leave management and documentation.",
+          features: ["Onboarding", "CV screening", "Leave", "Documents"],
+        },
+        {
+          title: "Finance",
+          description:
+            "Automatic invoicing, accounting, financial reporting and debt collection.",
+          features: ["Invoicing", "Accounting", "Reports", "Collection"],
+        },
+        {
+          title: "Administration",
+          description:
+            "Document management, email management, workflow approval and archiving.",
+          features: ["Documents", "Email", "Workflow", "Archive"],
+        },
+      ],
+    },
+    industries: {
+      title: "Industries We Support",
+      subtitle: "We specialize in automation for selected sectors",
+      items: [
+        {
+          title: "Medical & Beauty",
+          description: "24/7 bookings, reminders, review collection",
+          link: "/medical",
+          cta: "What we automate",
+        },
+        {
+          title: "SaaS & Tech",
+          description: "User onboarding, billing, customer success",
+          link: "/saas",
+          cta: "Learn more",
+        },
+        {
+          title: "Professional Services",
+          description: "Law firms, agencies, consulting - workflow and documents",
+          link: "/services",
+          cta: "Learn more",
         },
       ],
     },
@@ -517,7 +589,7 @@ export const translations = {
           title: "Consultation",
           description:
             "We learn your processes, identify automation opportunities, and propose solutions.",
-          duration: "30 min",
+          duration: "60 min",
         },
         {
           number: "02",
@@ -568,19 +640,19 @@ export const translations = {
           description: "Less repetitive tasks",
         },
         {
-          value: "+47%",
-          label: "Visit increase",
-          description: "Thanks to 24/7 availability",
+          value: "+40%",
+          label: "Productivity increase",
+          description: "More time for growth",
         },
         {
           value: "24/7",
-          label: "Booking availability",
-          description: "Even at 11 PM on Sunday",
+          label: "Automation",
+          description: "Systems work non-stop",
         },
         {
-          value: "0%",
-          label: "No-show",
-          description: "Smart reminders",
+          value: "2x",
+          label: "Faster onboarding",
+          description: "Clients and employees",
         },
       ],
     },
@@ -701,7 +773,7 @@ export const translations = {
     ctaFinal: {
       title: "Ready for More Time and More Revenue",
       subtitle:
-        "Book a free consultation. We'll show you how it works in 30 minutes.",
+        "Book a free consultation. We'll show you how it works in 60 minutes.",
       primaryCta: "Book a demo",
       secondaryCta: "See case study",
       badges: {

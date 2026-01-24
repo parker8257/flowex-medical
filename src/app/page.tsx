@@ -2,14 +2,11 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
-import Problem from "@/components/sections/Problem";
 import Solution from "@/components/sections/Solution";
-import FeaturesGrid from "@/components/sections/FeaturesGrid";
+import Industries from "@/components/sections/Industries";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Technology from "@/components/sections/Technology";
 import Benefits from "@/components/sections/Benefits";
-import CaseStudy from "@/components/sections/CaseStudy";
-import ROICalculator from "@/components/sections/ROICalculator";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTAFinal from "@/components/sections/CTAFinal";
@@ -23,14 +20,11 @@ export default function Home() {
       <SchemaOrg />
       <Navbar />
       <Hero />
-      <Problem />
       <Solution />
-      <FeaturesGrid />
+      <Industries />
       <HowWeWork />
       <Technology />
       <Benefits />
-      <CaseStudy />
-      <ROICalculator />
       <Testimonials />
       <FAQ />
       <CTAFinal />

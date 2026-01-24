@@ -1,17 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageSquare, Bell, Star, FileText } from "lucide-react";
+import { Megaphone, TrendingUp, HeadphonesIcon, Users, Calculator, FileStack } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const solutionIcons = [MessageSquare, Bell, Star, FileText];
+const solutionIcons = [Megaphone, TrendingUp, HeadphonesIcon, Users, Calculator, FileStack];
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.1,
     },
   },
 };
@@ -54,44 +54,40 @@ export default function Solution() {
           </p>
         </motion.div>
 
-        {/* Solution modules */}
+        {/* Solution modules - 6 grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {t.solution.modules.map((module, index) => {
-            const IconComponent = solutionIcons[index];
+            const IconComponent = solutionIcons[index] || FileStack;
             return (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="group bg-gradient-to-b from-[#1a1a1a] to-[#121212] border border-[#2a2a2a] rounded-2xl p-8 hover:border-[#10B981]/50 transition-all duration-300"
+                className="group bg-gradient-to-b from-[#1a1a1a] to-[#121212] border border-[#2a2a2a] rounded-2xl p-6 hover:border-[#2563EB]/50 transition-all duration-300"
               >
-                <div className="flex items-start gap-5">
-                  <div className="w-14 h-14 bg-[#10B981]/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#10B981]/20 transition-colors">
-                    <IconComponent className="w-7 h-7 text-[#10B981]" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-white font-semibold text-xl mb-2">
-                      {module.title}
-                    </h3>
-                    <p className="text-[#a1a1a1] leading-relaxed mb-4">
-                      {module.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {module.features.map((feature, fIndex) => (
-                        <span
-                          key={fIndex}
-                          className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-3 py-1 text-xs text-[#a1a1a1]"
-                        >
-                          {feature}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                <div className="w-12 h-12 bg-[#2563EB]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#2563EB]/20 transition-colors">
+                  <IconComponent className="w-6 h-6 text-[#2563EB]" />
+                </div>
+                <h3 className="text-white font-semibold text-xl mb-2">
+                  {module.title}
+                </h3>
+                <p className="text-[#a1a1a1] leading-relaxed mb-4 text-sm">
+                  {module.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {module.features.map((feature, fIndex) => (
+                    <span
+                      key={fIndex}
+                      className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-2 py-1 text-xs text-[#a1a1a1]"
+                    >
+                      {feature}
+                    </span>
+                  ))}
                 </div>
               </motion.div>
             );
