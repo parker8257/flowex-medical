@@ -78,25 +78,30 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Stats */}
+          {/* Problems section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
+            className="mt-16 max-w-3xl mx-auto"
           >
-            {[
-              { value: "15+", label: t.hero.stats.clients },
-              { value: "2,500+", label: t.hero.stats.visits },
-              { value: "98%", label: t.hero.stats.satisfaction },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-[#a1a1a1]">{stat.label}</div>
-              </div>
-            ))}
+            <h3 className="text-2xl font-bold text-white mb-8 text-center">
+              {t.hero.problemTitle}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {t.hero.problems.map((problem, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                  className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl p-6 hover:border-[#2563EB]/50 transition-all"
+                >
+                  <h4 className="text-white font-semibold mb-3">{problem.title}</h4>
+                  <p className="text-[#a1a1a1] text-sm leading-relaxed">{problem.description}</p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>

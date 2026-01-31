@@ -31,11 +31,24 @@ export const translations = {
         "Więcej czasu na rozwój firmy. Mniej czasu na powtarzalne zadania. Wdrażamy inteligentne rozwiązania, które pracują 24/7.",
       cta: "Umów konsultację",
       ctaSecondary: "Zobacz jak działamy",
-      stats: {
-        clients: "Klientów",
-        visits: "Automatyzacji/msc",
-        satisfaction: "Satysfakcji",
-      },
+      problemTitle: "Dlaczego Twój biznes stoi w miejscu zamiast dynamicznie się rozwijać?",
+      problems: [
+        {
+          title: "Marnowanie czasu na rutynowe działania",
+          description:
+            "Pracownicy wykonują w kółko te same mechaniczne zadania, zamiast skupić się na tym, co naprawdę popycha firmę do przodu.",
+        },
+        {
+          title: "Rozrzucone informacje i brak kontroli",
+          description:
+            "Trudno ocenić rzeczywiste koszty procesów i zidentyfikować miejsca, gdzie firma traci czas i zasoby.",
+        },
+        {
+          title: "Brak ujednoliconych procedur",
+          description:
+            "Każdy pracuje na swój sposób, co prowadzi do pomyłek, niedopowiedzeń i ciągłego gaszenia pożarów.",
+        },
+      ],
     },
     problem: {
       title: "Czy Twój Gabinet Ma Te Problemy",
@@ -430,11 +443,24 @@ export const translations = {
         "More time for growth. Less time on repetitive tasks. We implement intelligent solutions that work 24/7.",
       cta: "Book a consultation",
       ctaSecondary: "See how we work",
-      stats: {
-        clients: "Clients",
-        visits: "Automations/mo",
-        satisfaction: "Satisfaction",
-      },
+      problemTitle: "Why is your business standing still instead of growing dynamically?",
+      problems: [
+        {
+          title: "Wasting time on routine tasks",
+          description:
+            "Employees perform the same mechanical tasks repeatedly instead of focusing on what truly drives your business forward.",
+        },
+        {
+          title: "Scattered information and lack of control",
+          description:
+            "It's difficult to assess the real costs of processes and identify where your company is losing time and resources.",
+        },
+        {
+          title: "Lack of unified procedures",
+          description:
+            "Everyone works their own way, leading to mistakes, miscommunications, and constantly putting out fires.",
+        },
+      ],
     },
     problem: {
       title: "Does Your Practice Have These Problems",
