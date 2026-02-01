@@ -6,6 +6,7 @@ import Solution from "@/components/sections/Solution";
 import Industries from "@/components/sections/Industries";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Technology from "@/components/sections/Technology";
+import WebDevelopment from "@/components/sections/WebDevelopment";
 import Benefits from "@/components/sections/Benefits";
 import FAQ from "@/components/sections/FAQ";
 import CTAFinal from "@/components/sections/CTAFinal";
@@ -23,6 +24,7 @@ export default function Home() {
       <Industries />
       <HowWeWork />
       <Technology />
+      <WebDevelopment />
       <Benefits />
       <FAQ />
       <CTAFinal />

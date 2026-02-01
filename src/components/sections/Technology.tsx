@@ -29,12 +29,16 @@ export default function Technology() {
   const { t } = useLanguage();
 
   const partners = [
-    { name: "OpenAI", logo: "OpenAI" },
-    { name: "Anthropic", logo: "Anthropic" },
-    { name: "Google", logo: "Google" },
-    { name: "n8n", logo: "n8n" },
-    { name: "Make", logo: "Make" },
-    { name: "Zapier", logo: "Zapier" },
+    { name: "OpenAI", color: "#00A67E" },
+    { name: "Anthropic", color: "#D4A574" },
+    { name: "Google", color: "#4285F4" },
+    { name: "n8n", color: "#EA4B71" },
+    { name: "WhatsApp", color: "#25D366" },
+    { name: "Telegram", color: "#0088CC" },
+    { name: "Messenger", color: "#0084FF" },
+    { name: "Airtable", color: "#18BFFF" },
+    { name: "Notion", color: "#FFFFFF" },
+    { name: "Microsoft", color: "#00A4EF" },
   ];
 
   return (
@@ -90,7 +94,7 @@ export default function Technology() {
           })}
         </motion.div>
 
-        {/* Partner logos */}
+        {/* Partner logos - Marquee Animation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -99,16 +103,44 @@ export default function Technology() {
           className="text-center"
         >
           <p className="text-[#6b7280] text-sm mb-6">{t.technology.partners}</p>
-          <div className="flex flex-wrap items-center justify-center gap-6">
-            {partners.map((partner, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-6 py-3 hover:border-[#2563EB]/30 transition-colors"
-              >
-                <span className="text-[#a1a1a1] font-medium">{partner.name}</span>
-              </motion.div>
-            ))}
+          <div className="relative overflow-hidden">
+            {/* Gradient overlays */}
+            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#0f0f0f] to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#0f0f0f] to-transparent z-10" />
+
+            {/* Scrolling container */}
+            <div className="flex animate-marquee">
+              {/* First set */}
+              {partners.map((partner, index) => (
+                <div
+                  key={`first-${index}`}
+                  className="flex-shrink-0 mx-4 bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-6 py-3 hover:border-[#2563EB]/30 transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <div
+                      className="w-2 h-2 rounded-full opacity-60 group-hover:opacity-100 transition-opacity"
+                      style={{ backgroundColor: partner.color }}
+                    />
+                    <span className="text-[#a1a1a1] font-medium group-hover:text-white transition-colors">{partner.name}</span>
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {partners.map((partner, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="flex-shrink-0 mx-4 bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-6 py-3 hover:border-[#2563EB]/30 transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <div
+                      className="w-2 h-2 rounded-full opacity-60 group-hover:opacity-100 transition-opacity"
+                      style={{ backgroundColor: partner.color }}
+                    />
+                    <span className="text-[#a1a1a1] font-medium group-hover:text-white transition-colors">{partner.name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
