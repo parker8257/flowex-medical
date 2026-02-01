@@ -40,11 +40,10 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <a href="#" className="inline-block mb-4">
-              <img
-                src="/logo.svg"
-                alt={siteConfig.name}
-                className="h-16 w-auto"
-              />
+              <span className="text-2xl font-bold text-white">
+                {siteConfig.name}
+                <span className="text-[#2563EB]">.</span>
+              </span>
             </a>
             <p className="text-[#a1a1a1] text-sm leading-relaxed mb-6">
               {t.footer.description}

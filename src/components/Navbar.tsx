@@ -41,11 +41,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img
-              src="/logo.svg"
-              alt={siteConfig.name}
-              className="h-20 w-auto"
-            />
+            <span className="text-2xl font-extrabold text-white tracking-tight">
+              {siteConfig.name}
+              <span className="text-[#2563EB]">.</span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}
