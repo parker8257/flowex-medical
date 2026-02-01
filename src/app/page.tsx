@@ -8,7 +8,6 @@ import Industries from "@/components/sections/Industries";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Technology from "@/components/sections/Technology";
 import Benefits from "@/components/sections/Benefits";
-import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTAFinal from "@/components/sections/CTAFinal";
 import Contact from "@/components/sections/Contact";
@@ -27,7 +26,6 @@ export default function Home() {
       <HowWeWork />
       <Technology />
       <Benefits />
-      <Testimonials />
       <FAQ />
       <CTAFinal />
       <Contact />
