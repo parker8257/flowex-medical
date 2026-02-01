@@ -43,7 +43,7 @@ export default function Footer() {
               <img
                 src="/logo.svg"
                 alt={siteConfig.name}
-                className="h-10 w-auto"
+                className="h-16 w-auto"
               />
             </a>
             <p className="text-[#a1a1a1] text-sm leading-relaxed mb-6">

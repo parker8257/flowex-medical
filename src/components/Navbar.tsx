@@ -44,7 +44,7 @@ export default function Navbar() {
             <img
               src="/logo.svg"
               alt={siteConfig.name}
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </a>
 
